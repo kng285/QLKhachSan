@@ -20,10 +20,10 @@ jobs:
         dotnet-version: '8.0.x'   # nếu bạn dùng .NET 6 thì đổi thành 6.0.x
 
     - name: Restore dependencies
-      run: dotnet restore Xuong04_QLKS/Xuong04_QLKS/Xuong04_QLKS.sln
+      run: dotnet restore Xuong04_QLKS/Xuong04_QLKS.sln
 
     - name: Build
-      run: dotnet build Xuong04_QLKS/Xuong04_QLKS/Xuong04_QLKS.sln --no-restore -c Release
+      run: dotnet build Xuong04_QLKS/Xuong04_QLKS.sln --no-restore -c Release
 
     - name: Test
       run: dotnet test --no-build -c Release --verbosity normal
